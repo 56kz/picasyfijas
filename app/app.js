@@ -44,11 +44,13 @@ function haveFourDigits( new_number, secret_number ){
  };
 };
 
+
 $('#new-number').keyup(function(e){
   if (e.which === 13) {
     const new_number = $(this).val();
     const array = new_number.split('');
     const marray = array.sort();
+    console.log("oprimes enter");
     validate(new_number, marray);
   }
 });
