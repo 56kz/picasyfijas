@@ -1,0 +1,70 @@
+body {
+font-family: 'Staatliches', cursive;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  font-size: 21px;
+  width: 130px;
+  border: 1px solid #ccc;
+  padding: 13px;
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+div {
+  position: relative;
+  text-align: center;
+}
+
+tr{
+  margin: 0 auto;
+  text-align: center
+}
+
+thead {
+  font-size: 17px;
+}
+
+tbody {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+#new-game {
+  color: black;
+}
+#win{
+ margin: 0 auto;
+}
+
+
+
+.winner {
+  display: none;
+  margin: 0 auto;
+  background-color: #000000;
+  height: 600px;
+  text-align: center;
+}
+
+.table {
+ font-size: 18px;
+ width: 25%;
+ text-align: center;
+ margin: 30px auto;
+}
+
+.title {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  margin: 25px auto;
+}
