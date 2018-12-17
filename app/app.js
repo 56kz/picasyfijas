@@ -28,10 +28,18 @@ function finalvalidate( new_number, secret_number ){
    for (var i = 0; i < new_number.length; i++) {
      if (new_number[i] === secret_number[i]) {
        fijas += 1;
-     }; //encuentra el numero de fijas
-     if (secret_number.includes(new_number[i])) {
-       picas += 1;
-     }; //encuentra el numero de picas
+     } else {
+       if (secret_number.includes(new_number[i])) {
+         picas += 1;
+       };
+     } //encuentra el numero de fijas
+
+
+     //encuentra el numero de picas
+
+
+
+
    };
    $('tbody').prepend('<tr><td>' + new_number + '<td>' + picas + '<td>' + fijas);
    $('#new-number').val('');
