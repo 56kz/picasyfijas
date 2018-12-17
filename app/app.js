@@ -33,8 +33,6 @@ function finalvalidate( new_number, secret_number ){
          picas += 1;
        };
      } //encuentra el numero de fijas
-
-
      //encuentra el numero de picas
 
 
