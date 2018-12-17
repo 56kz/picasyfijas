@@ -28,6 +28,7 @@ function finalvalidate( new_number, secret_number ){
    for (var i = 0; i < new_number.length; i++) {
      if (new_number[i] === secret_number[i]) {
        fijas += 1;
+       break;
      } else {
        if (secret_number.includes(new_number[i])) {
          picas += 1;
