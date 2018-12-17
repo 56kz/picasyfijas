@@ -17,28 +17,21 @@ function validate( new_number, marray ){//entra el mnumero del user y lo revisa
     $('.error').css("color", "red");
   } else {
     $('.error').css("color", "white");
-    finalvalidate( new_number, secret_number );
+    haveFourDigits( new_number, secret_number );
   };
 };
 
-function finalvalidate( new_number, secret_number ){
+function haveFourDigits( new_number, secret_number ){
  if ( secret_number.toString() !== new_number.toString() ) { //si el numero es diferentes del secreto se mete en la tabla
    var fijas = 0;
    var picas = 0;
    for (var i = 0; i < new_number.length; i++) {
      if (new_number[i] === secret_number[i]) {
        fijas += 1;
-       break;
-     } else {
-       if (secret_number.includes(new_number[i])) {
-         picas += 1;
-       };
-     } //encuentra el numero de fijas
-     //encuentra el numero de picas
-
-
-
-
+     }; //encuentra el numero de fijas
+     if ( (secret_number.includes(new_number[i]) && (new_number[i] !== secret_number[i]) ) ) {
+       picas += 1;
+     }; //encuentra el numero de picas
    };
    $('tbody').prepend('<tr><td>' + new_number + '<td>' + picas + '<td>' + fijas);
    $('#new-number').val('');
